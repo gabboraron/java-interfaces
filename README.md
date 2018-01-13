@@ -3,33 +3,33 @@
 source: http://tutorials.jenkov.com/java/interfaces.html
 
 # Creating an interface
-    <code>
+<code>
       public interface MyInterface {
         public String hello = "Hello";
 
         public void sayHello();
       }
-    </code>
+</code>
 
 # Call it
-    <code>
+<code>
       System.out.println(MyInterface.hello);
 
-    </code>
+</code>
 
 or like this: 
 
-    <code> 
+<code> 
       MyInterface myInterface = new MyInterfaceImpl();
 
       myInterface.sayHello();
-    </code>
+</code>
 
 # Implementation
-    <code>
+<code>
       public class MyInterfaceImpl implements MyInterface {
         public void sayHello() {
             System.out.println(MyInterface.hello);
         }
       }
-    </code>
+</code>
